@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evergreen State University | Unlock Your Future</title>
+	<link rel="stylesheet" href="style.css"/>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .bg-navy { background-color: #002147; }
+        .text-navy { color: #002147; }
+        .bg-forest { background-color: #004d2c; }
+        .text-forest { color: #004d2c; }
+        .border-forest { border-color: #004d2c; }
+        .hover-forest:hover { background-color: #003a21; }
+    </style>
+</head>
+<body class="bg-white text-slate-800 antialiased">
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <div class="bg-forest p-1.5 rounded">
+                    <i data-lucide="graduation-cap" class="text-white w-6 h-6"></i>
+                </div>
+                <span class="text-xl font-800 tracking-tighter text-navy uppercase">Evergreen <span class="font-light text-forest">State</span></span>
+            </div>
+            
+            <!-- Desktop Nav -->
+            <div class="hidden md:flex items-center space-x-8 font-medium text-sm uppercase tracking-wide text-slate-600">
+                <a href="#programs" class="hover:text-forest transition">Programs</a>
+                <a href="#admissions" class="hover:text-forest transition">Admissions</a>
+                <a href="#campus" class="hover:text-forest transition">Campus Life</a>
+                <a href="#" class="bg-forest text-white px-6 py-2.5 rounded-full hover:bg-emerald-900 transition shadow-lg shadow-emerald-900/20">Apply Now</a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="md:hidden text-navy">
+                <i data-lucide="menu"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative h-[85vh] flex items-center overflow-hidden">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="slider.jpg" alt="University Campus" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-navy/90 to-navy/40"></div>
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10 text-white">
+            <div class="max-w-3xl">
+                <span class="inline-block px-4 py-1 mb-4 border border-emerald-400/50 rounded-full bg-emerald-500/10 backdrop-blur-sm text-emerald-300 font-semibold text-sm uppercase tracking-widest">
+                    Academic Excellence Since 1923
+                </span>
+                <h1 class="text-5xl md:text-7xl font-800 mb-6 leading-tight">
+                    Unlock Your <span class="text-emerald-400">Future</span>
+                </h1>
+                <p class="text-lg md:text-xl mb-10 text-slate-200 leading-relaxed max-w-xl">
+                    Join a community of innovators and leaders. At Evergreen State, we provide the tools, mentorship, and environment for you to turn your dreams into a career.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#programs" class="px-8 py-4 bg-forest text-white rounded-lg font-bold text-center hover:scale-105 transition-transform shadow-xl shadow-forest/30">
+                        Explore Programs
+                    </a>
+                    <a href="#" class="px-8 py-4 bg-white/10 backdrop-blur-md border border-white/30 text-white rounded-lg font-bold text-center hover:bg-white/20 transition">
+                        Virtual Tour
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS BAR -->
+    <section class="bg-navy py-12 relative">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-slate-700">
+                <div class="p-4">
+                    <p class="text-4xl font-800 text-emerald-400 mb-2">95%</p>
+                    <p class="text-slate-300 uppercase tracking-widest text-xs font-semibold">Job Placement Rate</p>
+                </div>
+                <div class="p-4">
+                    <p class="text-4xl font-800 text-emerald-400 mb-2">20:1</p>
+                    <p class="text-slate-300 uppercase tracking-widest text-xs font-semibold">Student-Faculty Ratio</p>
+                </div>
+                <div class="p-4">
+                    <p class="text-4xl font-800 text-emerald-400 mb-2">50+</p>
+                    <p class="text-slate-300 uppercase tracking-widest text-xs font-semibold">Undergraduate Majors</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES GRID -->
+    <section id="programs" class="py-24 bg-slate-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-800 text-navy mb-4">Why Choose Evergreen?</h2>
+                <div class="w-20 h-1.5 bg-forest mx-auto mb-6"></div>
+                <p class="text-slate-600 italic">Experience a world-class education designed for the modern world.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Card 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-xl transition-shadow group">
+                    <div class="w-14 h-14 bg-emerald-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-forest transition-colors">
+                        <i data-lucide="users" class="text-forest group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy mb-3">World-Class Faculty</h3>
+                    <p class="text-slate-600 leading-relaxed">Learn from industry experts and researchers dedicated to your academic growth and personal development.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-xl transition-shadow group">
+                    <div class="w-14 h-14 bg-emerald-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-forest transition-colors">
+                        <i data-lucide="building-2" class="text-forest group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy mb-3">Modern Facilities</h3>
+                    <p class="text-slate-600 leading-relaxed">Access state-of-the-art labs, libraries, and creative spaces designed to foster innovation and collaboration.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-xl transition-shadow group">
+                    <div class="w-14 h-14 bg-emerald-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-forest transition-colors">
+                        <i data-lucide="trending-up" class="text-forest group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy mb-3">Career Success</h3>
+                    <p class="text-slate-600 leading-relaxed">Our robust career center and alumni network ensure you're prepared for the professional world from day one.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTAs / SOCIAL PROOF SECTION -->
+    <section id="admissions" class="py-20 bg-forest relative overflow-hidden">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between relative z-10">
+            <div class="text-white mb-10 md:mb-0 max-w-xl text-center md:text-left">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Start Your Journey Today</h2>
+                <p class="text-emerald-100 text-lg">90% of our students receive financial aid. We make high-quality education accessible to everyone.</p>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
+                <button class="bg-white text-forest px-8 py-4 rounded-lg font-bold hover:bg-slate-100 transition whitespace-nowrap">
+                    Request a Brochure
+                </button>
+                <button class="bg-navy text-white px-8 py-4 rounded-lg font-bold hover:bg-slate-900 transition whitespace-nowrap">
+                    Apply Online
+                </button>
+            </div>
+        </div>
+        <!-- Decorative Circle -->
+        <div class="absolute -right-20 -bottom-20 w-96 h-96 bg-emerald-900/30 rounded-full blur-3xl"></div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-white pt-16 pb-8 border-t border-slate-100">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-1">
+                    <div class="flex items-center space-x-2 mb-6">
+                        <div class="bg-forest p-1 rounded">
+                            <i data-lucide="graduation-cap" class="text-white w-5 h-5"></i>
+                        </div>
+                        <span class="text-lg font-800 text-navy uppercase">Evergreen</span>
+                    </div>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-6">
+                        Empowering students to change the world through excellence in education, research, and community engagement.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-slate-400 hover:text-forest transition"><i data-lucide="facebook"></i></a>
+                        <a href="#" class="text-slate-400 hover:text-forest transition"><i data-lucide="instagram"></i></a>
+                        <a href="#" class="text-slate-400 hover:text-forest transition"><i data-lucide="twitter"></i></a>
+                        <a href="#" class="text-slate-400 hover:text-forest transition"><i data-lucide="linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-navy mb-6">Programs</h4>
+                    <ul class="space-y-4 text-sm text-slate-500">
+                        <li><a href="#" class="hover:text-forest transition">Arts & Humanities</a></li>
+                        <li><a href="#" class="hover:text-forest transition">Science & Tech</a></li>
+                        <li><a href="#" class="hover:text-forest transition">Business School</a></li>
+                        <li><a href="#" class="hover:text-forest transition">Graduate Studies</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-navy mb-6">Admissions</h4>
+                    <ul class="space-y-4 text-sm text-slate-500">
+                        <li><a href="#" class="hover:text-forest transition">Financial Aid</a></li>
+                        <li><a href="#" class="hover:text-forest transition">Tuition & Fees</a></li>
+                        <li><a href="#" class="hover:text-forest transition">Visit Campus</a></li>
+                        <li><a href="#" class="hover:text-forest transition">How to Apply</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-navy mb-6">Contact Us</h4>
+                    <ul class="space-y-4 text-sm text-slate-500">
+                        <li class="flex items-start space-x-3">
+                            <i data-lucide="map-pin" class="w-5 h-5 text-forest shrink-0"></i>
+                            <span>123 University Ave, <br>Olympia, WA 98505</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i data-lucide="phone" class="w-5 h-5 text-forest shrink-0"></i>
+                            <span>(360) 555-0123</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-slate-100 text-center text-slate-400 text-xs">
+                <p>&copy; 2023 Evergreen State University. All rights reserved. | <a href="#" class="underline">Privacy Policy</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
